@@ -1,0 +1,12 @@
+div {
+  background-color: red;
+
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+div:nth-child(even) {
+  position: relative;
+  margin-left: 50px;
+}

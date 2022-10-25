@@ -1,0 +1,18 @@
+#first {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 300px;
+}
+#line {
+  position: absolute;
+  left: 50%;
+  border-left: 1px solid black;
+  height: 150px;
+}
+#second {
+  float: right;
+  width: 40%;
+  padding: 10px;
+  height: 300px;
+}

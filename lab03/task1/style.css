@@ -1,0 +1,65 @@
+.heading {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  color: #555555;
+  text-align: center;
+}
+.minHeading {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  color: #555555;
+  text-align: center;
+}
+.firstbtn {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  color: #555555;
+  text-align: center;
+}
+button {
+  background-color: rgb(179, 117, 127);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+}
+.row {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  margin-top: 20px;
+  margin: 15px;
+}
+#secondimg:hover {
+  position: absolute;
+  top: 10%;
+}
+.headingtwo {
+  position: absolute;
+  top: 100%;
+}
+.loremm {
+  position: absolute;
+  top: 100%;
+  left: 70%;
+}
+.headingthree {
+  position: absolute;
+  top: 150%;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: black;
+  }
+}
+@media screen and (min-width: 700px) {
+  body {
+    background-color: white;
+  }
+}

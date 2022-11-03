@@ -37,3 +37,25 @@ function task3() {
   const string = JSON.stringify(array);
   document.getElementById("output2").innerHTML = string;
 }
+
+//task5 function
+function task5() {
+  var bill = parseInt(document.getElementById("billInput").value);
+  var tax = 0.16 * bill;
+  var e = document.getElementById("options");
+  var value = e.value;
+  var total = 0;
+  if (value == "Outstanding") {
+    total = 0.3;
+  } else if (value == "Good") {
+    total = 0.2;
+  } else if (value == "it was okay") {
+    total = 0.2;
+  } else if (value == "bad") {
+    total = 0.2;
+  } else if (value == "terrible") {
+    total = 0.2;
+  }
+  var service = tax + bill + total * bill;
+  document.getElementById("answer5").value = service;
+}

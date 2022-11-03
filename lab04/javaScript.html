@@ -36,6 +36,57 @@
     <pre id="output2"></pre>
     <script src="javaScript.js"></script>
 
+    <h1>Task 4</h1>
+    <br />
+    <!-- <form action="">
+      username:
+      <input type="text" id="username" />
+      <br />
+      name:
+      <input type="text" id="name" />
+      <br />
+      password:
+      <input type="password" id="password" />
+      <br />
+      <input type="button" onclick="required()" value="Submit" />
+    </form> -->
+    <!-- <form name="Form" action="#" onsubmit="required()">
+      <ul>
+        <li>Name: <input type="text" name="name"  onkeyup="checkPass(); return false;""> </li>
+        <li>Username: <input type="text" name="username" /></li>
+        <li>Password: <input type="password" name="password" /></li>
+        <div id="error-nwl"></div>
+        <li><input type="submit" name="submit" value="Submit" /></li>
+      </ul>
+    </form> -->
+    <form action="" id="Form">
+      <input
+        name="name"
+        type="text"
+        placeholder="password"
+        id="pass1"
+        onkeyup="checkPass(); return false;"
+      />
+      <br />
+      <input
+        name="username"
+        type="text"
+        placeholder="confirm password"
+        id="pass2"
+        onkeyup="checkPass(); return false;"
+      />
+      <input
+        name="password"
+        type="password"
+        placeholder="confirm password"
+        id="pass3"
+        onkeyup="checkPass(); return false;"
+      />
+      <br />
+      <input type="button" onclick="checkPass()" value="Submit" />
+      <br />
+      <div id="error-nwl"></div>
+    </form>
     <h1>Task 5</h1>
     <br />
 

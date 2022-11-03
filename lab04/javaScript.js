@@ -37,6 +37,35 @@ function task3() {
   const string = JSON.stringify(array);
   document.getElementById("output2").innerHTML = string;
 }
+//task4 function
+// function required() {
+//   var pass1 = document.getElementById("pass1");
+//   var pass2 = document.getElementById("pass2");
+//   var pass3 = document.getElementById("pass3");
+//   //var pass1 = document.getElementById("password");
+//   var message = document.getElementById("error-nwl");
+//   var goodColor = "#66cc66";
+//   var badColor = "#ff6666";
+
+//   if (
+//     (pass1 == null || pass1 == "",
+//     pass2 == null || pass2 == "",
+//     pass3 == null || pass3 == "")
+//   ) {
+//     alert("Please Fill All Required Field");
+//     return;
+//   }
+//   if (pass1.value.length >= 8) {
+//     pass1.style.backgroundColor = goodColor;
+//     message.style.color = goodColor;
+//     message.innerHTML = "character number ok!";
+//   } else {
+//     pass1.style.backgroundColor = badColor;
+//     message.style.color = badColor;
+//     message.innerHTML = " you have to enter at least 8 digit!";
+//     return;
+//   }
+// }
 
 //task5 function
 function task5() {
@@ -58,4 +87,33 @@ function task5() {
   }
   var service = tax + bill + total * bill;
   document.getElementById("answer5").value = service;
+}
+
+function checkPass() {
+  var pass1 = document.getElementById("pass1");
+  var pass2 = document.getElementById("pass2");
+  var pass3 = document.getElementById("pass3");
+  var message = document.getElementById("error-nwl");
+  var goodColor = "#66cc66";
+  var badColor = "#ff6666";
+
+  if (
+    (pass1 == null || pass1 == "",
+    pass2 == null || pass2 == "",
+    pass3 == null || pass3 == "")
+  ) {
+    alert("Please Fill All Required Field");
+    return False;
+  }
+
+  if (pass3.value.length >= 8) {
+    pass3.style.backgroundColor = goodColor;
+    message.style.color = goodColor;
+    message.innerHTML = "character number ok!";
+  } else {
+    pass3.style.backgroundColor = badColor;
+    message.style.color = badColor;
+    message.innerHTML = " you have to enter at least 8 digit!";
+    return;
+  }
 }

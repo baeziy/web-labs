@@ -21,3 +21,19 @@ function task2() {
 }
 
 //task3 function
+function task3() {
+  const array = [2, 5, 1, 3];
+  const string1 = JSON.stringify(array);
+  document.getElementById("output1").innerHTML = string1;
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 0; j < array.length - i - 1; j++) {
+      if (array[j] > array[j + 1]) {
+        var temp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = temp;
+      }
+    }
+  }
+  const string = JSON.stringify(array);
+  document.getElementById("output2").innerHTML = string;
+}
